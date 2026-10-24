@@ -1,0 +1,26 @@
+﻿ID,WBS,Task,Dur. (wks),Start wk,Finish wk,Predecessors,Resource,Milestone
+1,1.1,Project charter and sponsor approval,1,1,1,—,PM,M1 Charter approved
+2,1.2,Stakeholder register and kick-off,1,2,2,1 FS FS,PM,
+3,2.1,Requirements workshops,2,3,4,2 FS FS,BA,
+4,2.2,Requirements specification sign-off,1,5,5,3 FS FS,BA,M2 Requirements baselined
+5,3.1,Platform evaluation (Moodle vs Canvas),1,6,6,4 FS FS,BA / LMS Admin,M3 Platform approved
+6,4.1,Solution architecture and security design,2,7,8,5 FS FS,Technical Lead,
+7,5.1,"Provision dev, test, staging, production",2,8,9,6 SS+1 FS,Infrastructure Admin,
+8,5.2,Install and harden Moodle,1,10,10,"6 FS, 7 FS FS",LMS Admin,
+9,6.1,"Configure roles, authentication, course templates",2,11,12,8 FS FS,LMS Admin,
+10,6.2,Theme branding and approved plugins,2,11,12,8 FS FS,Moodle Developer,
+11,6.3,GitHub configuration baseline v1.0,1,13,13,"9 FS, 10 FS FS",Config Manager,M4 Configuration baselined
+12,7.1,Content audit and migration templates,2,7,8,5 FS FS,Instructional Designer,
+13,7.2,Content migration and reconciliation,3,14,16,"11 FS, 12 FS FS",Instructional Designer,
+14,8.1,Functional and integration testing,2,14,15,11 FS FS,QA Tester,
+15,8.2,"Security, accessibility, performance testing",2,16,17,14 FS FS,Security / QA,
+16,8.3,Backup and restore testing,1,16,16,14 FS FS,Infrastructure Admin,
+17,9.1,Training materials and train-the-trainer,2,14,15,11 FS FS,Instructional Designer,
+18,10.1,Pilot with five courses,3,18,20,"13 FS, 15 FS, 16 FS, 17 FS FS",PM / Lecturer Rep,M5 Pilot completed
+19,9.2,Institution-wide staff training rollout,3,19,21,"17 FS, 18 SS+1 FS",Instructional Designer,M6 Core training complete
+20,11.1,Pilot evaluation and remediation,2,21,22,18 FS FS,PM / QA Tester,
+21,8.4,UAT execution,1,23,23,20 FS FS,QA / Lecturer Rep,
+22,8.5,"UAT retest, acceptance and go/no-go review",1,24,24,"21 FS, 19 FS FS",QA / Sponsor,M7 Go-live approved
+23,12.1,Production deployment and go-live,1,25,25,22 FS FS,LMS Admin,M8 LMS live
+24,13.1,Hypercare support,2,26,27,23 FS FS,Support Staff,
+25,13.2,"Handover, lessons learned, closure",1,28,28,24 FS FS,PM,M9 Project closed

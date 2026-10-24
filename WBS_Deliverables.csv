@@ -1,0 +1,15 @@
+﻿WBS,Work package,Main deliverables,Responsible role,Depends on,Completion criteria
+0,Project management,"Plans, logs, status reports, baselines",Project Manager,All,Plans approved; logs maintained weekly
+1,Initiation,"Charter, stakeholder register, kick-off",Project Manager,None,Charter signed by sponsor
+2,Requirements,"Requirements specification, traceability matrix",Business Analyst,1,Specification signed off and baselined
+3,Platform selection,"Weighted evaluation, decision record",Business Analyst,2,Sponsor approves platform
+4,Design,"Architecture, security design, role model",Technical Lead,3,Design review passed
+5,Infrastructure,Four environments; hardened Moodle install; backups,Infrastructure Admin,4,Environments operational; hardening checklist complete
+6,Configuration,"Roles, authentication, templates, theme, plugins, GitHub baseline v1.0",LMS Administrator,5,Configuration reviewed and tagged v1.0
+7,Content,"Content inventory, migrated courses, reconciliation report",Instructional Designer,"3, 6",All agreed courses reconciled
+8,Testing,"Test plans, test reports, UAT results, retest results, acceptance record",QA Tester,"6, 11",Mandatory quality gates in Table 20 met
+9,Training and change,"Training materials, trained trainers, training records",Instructional Designer,6,At least 90% of teaching staff trained before go/no-go
+10,Pilot,Pilot of five courses; feedback report,Project Manager,"7, 8, 9",Pilot exit criteria met
+11,Remediation,Fixed defects; regression test results,LMS Administrator,10,No open critical/high defects
+12,Deployment,Production cut-over; smoke tests,LMS Administrator,8,Go-live approved (M7); smoke tests pass
+13,Support and closure,Hypercare log; handover; lessons learned,Project Manager,12,IT services accept handover; closure signed
